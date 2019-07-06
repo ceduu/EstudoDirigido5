@@ -1,0 +1,94 @@
+Estudo dirigido 5
+
+1 -  Aumento Salário
+
+def calcula(salario, percentual):
+    valor_do_aumento = (salario/100)*percentual
+    salario_novo = salario + (salario/100)*percentual
+    mostrar_na_tela(salario, percentual, valor_do_aumento, salario_novo)
+
+def mostrar_na_tela(salario, percentual, valor_do_aumento, salario_novo):
+    print('O salário antes do reajuste era: %.2f.' % (salario))
+    print('O percentual de aumento foi de: %d%%.' % (percentual))
+    print('O valor do aumento foi de: %d.' % (valor_do_aumento))
+    print('O novo salrio ficou em: %.2f.' % (salario_novo))
+    
+
+salario = float(input('Digite o salário: '))
+
+if salario <= 280.00:
+    calcula(salario, 20)
+    
+elif salario > 280.00 and salario <= 700.00:
+    calcula(salario, 15)
+
+elif salario > 700.00 and salario <= 1500.00:
+    calcula(salario, 10)
+
+else:
+    calcula(salario, 5)
+
+2 - Ano nascimento , Ano atual
+ 
+
+ano_nasci = int(input('\nDigite o ano em que você nasceu: ')) # 4 dígitos Ex:1998
+
+ano_atual = int(input('\nDigite o ano atual: ')) # 4 dígitos Ex: 1998
+
+resposta = ano_atual - ano_nasci
+
+print("\n",'você nasceu em', ano_nasci ,'então você têm',resposta ,'anos de idade.')
+
+
+3 - Média
+
+
+
+prova = int(input("Mostre a nota que você tirou na prova: "))*(7)
+exercicio = int(input("Mostre a nota que você tirou na exercicio: "))*(1)
+trabalho = int(input("Mostre a nota que você tirou na trabalho: "))*(2)
+
+Media = (prova + trabalho + exercicio)/(10)
+
+
+print("Sua média é: ",Media)
+
+4 - Idade canina
+
+idade_humana = int(input("Coloque a idade humana desejada: "))
+
+cao_pequeno = idade_humana/5
+cao_medio = idade_humana/6
+cao_grande = idade_humana/7
+
+print("Caso você tenha um cão pequeno essa será sua idade = ",cao_pequeno ,"Caso você tenha um cão médio essa será sua idade = ",cao_medio, "Caso você tenha um cão grande essa será sua idade = ",cao_grande)
+
+
+
+5 - Calcula aumento salario (salário mínimo)
+
+def calcula(salario, percentual):
+    valor_do_aumento = (salario/100)*percentual
+    salario_novo = salario + (salario/100)*percentual
+    mostrar_na_tela(salario, percentual, valor_do_aumento, salario_novo)
+
+def mostrar_na_tela(salario, percentual, valor_do_aumento, salario_novo):
+    print('O salário antes do reajuste era: %.2f.' % (salario))
+    print('O percentual de aumento foi de: %d%%.' % (percentual))
+    print('O valor do aumento foi de: %d.' % (valor_do_aumento))
+    print('O novo salrio ficou em: %.2f.' % (salario_novo))
+    
+
+salario = float(input('Digite o salário: '))
+
+if salario <= 724.00:
+    calcula(salario, 20)
+    
+elif salario > 724.00 and salario <= 1448.00:
+    calcula(salario, 15)
+
+elif salario > 1448.00 and salario <= 3620.00:
+    calcula(salario, 10)
+
+else:
+    calcula(salario, 5)
